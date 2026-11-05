@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import "./appleMenu.scss";
 
 function AppleMenu({ onSystemAction }) {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef(null);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -64,9 +62,6 @@ function AppleMenu({ onSystemAction }) {
                     <div className="apple-menu-item" onClick={() => handleMenuClick("lock")}>
                         <span>Lock Screen</span>
                         <span className="apple-menu-shortcut">⌃⌘Q</span>
-                    </div>
-                    <div className="apple-menu-item" onClick={() => navigate("/")}>
-                        <span>Switch OS...</span>
                     </div>
                 </div>
             )}

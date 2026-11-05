@@ -1,8 +1,8 @@
 import ResumePDF from "./Daniel_Tusingwire_CV.pdf";
 import default_avatar from "../../assets/images/baseImages/default_avatar.svg";
-import Farmsell from "../../assets/images/data/farmsell.svg";
-import Othware from "../../assets/images/data/othware.svg";
-import Tallen from "../../assets/images/data/tallen.svg";
+import Farmsell from "../../assets/images/data/farmsell.png";
+import Othware from "../../assets/images/data/othware.png";
+import Tallen from "../../assets/images/data/tallen.png";
 
 const user = {
 	firstName: "Daniel",

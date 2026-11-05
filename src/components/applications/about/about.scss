@@ -77,7 +77,13 @@
 }
 
 .org-img {
+	width: 75px;
 	height: 75px !important;
+	max-width: none;
+	padding: 8px;
+	box-sizing: border-box;
+	object-fit: contain;
+	background: #ffffff;
 }
 
 .project-card {
