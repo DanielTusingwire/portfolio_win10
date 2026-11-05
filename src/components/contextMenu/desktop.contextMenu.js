@@ -1,0 +1,88 @@
+import React from "react";
+import { Menu, Item, Separator } from "react-contexify";
+import contact_me from "../../assets/images/contextMenu/contact_me.png";
+import refresh from "../../assets/images/contextMenu/refresh.png";
+import credits from "../../assets/images/contextMenu/credits.svg";
+import github from "../../assets/images/contextMenu/github.svg";
+import { SCREENS } from "../../utils/documents/enums";
+import Credits from "../base/credits";
+import { useBoolean } from "@fluentui/react-hooks";
+import user from "../../utils/data/user.config";
+
+const MENU_ID = "context-menu";
+
+function DesktopContextMenu(props) {
+	const handleRefresh = ({ event, props }) =>
+		console.log("Super Refreshed !!");
+	const navigate = (link) => {
+		window.open(link, "_blank");
+	};
+
+	const [isModalOpen, { setTrue: showModal, setFalse: hideModal }] =
+		useBoolean(false);
+	return (
+		<div>
+			<Menu id={MENU_ID}>
+				{props.location === SCREENS.DESKTOP && (
+					<Item onClick={handleRefresh}>
+						<img
+							src={refresh}
+							width="30"
+							height="30"
+							className="uk-margin-small-right"
+							alt="Refresh"
+						/>
+						Refresh
+					</Item>
+				)}
+				{props.location === SCREENS.DESKTOP && <Separator />}
+				{user.gitHub && (
+					<Item
+						onClick={() =>
+							navigate("https://github.com/" + user.gitHub)
+						}
+					>
+						<img
+							src={github}
+							width="30"
+							height="30"
+							className="uk-margin-small-right"
+							alt="Github"
+						/>
+						Github Profile
+					</Item>
+				)}
+				{user.gitHub && <Separator />}
+				<Item
+					onClick={() =>
+						navigate("mailto:" + user.email)
+					}
+				>
+					<img
+						src={contact_me}
+						width="30"
+						height="30"
+						className="uk-margin-small-right"
+						alt="mail"
+					/>
+					Contact Me
+				</Item>
+				<Separator />
+				<Item onClick={showModal}>
+					<img
+						src={credits}
+						width="30"
+						height="30"
+						className="uk-margin-small-right"
+						alt="Credits"
+					/>
+					Credits
+				</Item>
+				<Separator />
+			</Menu>
+			<Credits isModalOpen={isModalOpen} hideModal={hideModal} />
+		</div>
+	);
+}
+
+export default DesktopContextMenu;

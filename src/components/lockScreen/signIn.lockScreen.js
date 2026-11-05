@@ -1,0 +1,58 @@
+import React from "react";
+import "./lockScreen.scss";
+import { setSystemState } from "../../utils/actions/system.action";
+import { useDispatch } from "react-redux";
+import avatar from "../../assets/images/baseImages/default_avatar.svg";
+import { Icon, PrimaryButton } from "@fluentui/react";
+import SocialBlock from "../base/socialBlock";
+import user from "../../utils/data/user.config";
+
+function SignInScreen() {
+	const dispatch = useDispatch();
+	const setNextSystemState = (systemState) => {
+		dispatch(setSystemState(systemState));
+	};
+
+	return (
+		<div className="screenHeight SignInOverlay">
+			{/* Profile and Enter button */}
+			<div className="uk-position-center uk-overlay uk-text-center">
+				<div>
+					<img
+						className="uk-border-circle"
+						src={user.userImage || avatar}
+						width="200"
+						height="200"
+						alt="User"
+					/>
+				</div>
+				<div>
+					<h1 className="uk-heading-small  font-color-white">
+						{user.firstName} {user.lastName}
+					</h1>
+				</div>
+				<div className="uk-margin-small-top">
+					<PrimaryButton
+						text="Enter"
+						allowDisabledFocus
+						onClick={() => setNextSystemState("isDesktop")}
+					/>
+				</div>
+			</div>
+
+			{/* LockScreenIcons */}
+			<div className="uk-position-bottom-right uk-overlay uk-flex uk-flex-column">
+				<div className="font-color-white uk-text-lead">
+					<Icon iconName="WifiEthernet" />
+				</div>
+			</div>
+
+			{/* Social Links */}
+			<div className="uk-position-bottom-left uk-overlay uk-flex uk-flex-column">
+				<SocialBlock />
+			</div>
+		</div>
+	);
+}
+
+export default SignInScreen;
