@@ -44,7 +44,13 @@ The site opens at http://localhost:3000. To use another port, add a `.env` file 
 npm run build
 ```
 
-This creates a static site in the `build` folder. Your host must send every address to `index.html`, so that pages such as `/macOS` load when opened directly.
+This creates a static site in the `build` folder.
+
+## Deploy
+
+The site is set up for Cloudflare Workers. `wrangler.jsonc` serves the `build` folder and sends addresses such as `/macOS` to `index.html`.
+
+In Cloudflare, connect this repository with the build command `npm run build` and the deploy command `npx wrangler deploy`. Each push to `main` then updates the live site.
 
 ## Update the content
 
