@@ -94,6 +94,15 @@
 	filter: invert(1);
 }
 
+.project-availability {
+	display: inline-block;
+	padding: 6px 12px;
+	border: 1px solid #a4a4a4;
+	border-radius: 2px;
+	color: #ffffff;
+	font-size: 14px;
+}
+
 .skill-badge {
 	height: auto;
 	min-height: 18px;

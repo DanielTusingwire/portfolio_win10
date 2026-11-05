@@ -176,6 +176,47 @@ const user = {
 	],
 	projects: [
 		{
+			projectName: "Farmsell App – Agricultural Logistics Platform",
+			description:
+				"A role-based mobile app that helps aggregators, transporters, hub operators, distributors, and vendors coordinate agricultural produce efficiently and transparently. From collecting and recording farm produce to moving loads, verifying and allocating stock at hubs, last-mile delivery, and vendor orders, each user gets an experience shaped around their role in the supply chain.",
+			madeWith: [
+				"Product Design",
+				"UX/UI Design",
+				"Mobile Experience",
+				"Agricultural Technology",
+			],
+			availabilityNote: "Available after public release",
+		},
+		{
+			projectName:
+				"Etasuisse PM – Project Management & Cost Tracking Platform",
+			description:
+				"A connected project management platform featuring an admin web dashboard and an operator mobile app. Etasuisse PM streamlines project management, work-hour tracking, material and vehicle cost recording, expense management, and financial reporting. Designed to replace manual Excel-based processes, the platform helps businesses coordinate field operations, monitor project costs, and track profitability in one place.",
+			madeWith: ["Product Design", "Web Dashboard", "Mobile App"],
+			links: [
+				{
+					label: "View Mobile App",
+					url: "https://www.figma.com/proto/pfws8T9a234LJUxJZs1SwQ/Etasuisse?node-id=296-10048&p=f&viewport=604%2C334%2C0.09&t=zqF4UxpPNfPVZTM6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=203%3A5496&page-id=1%3A2",
+				},
+				{
+					label: "View Dashboard",
+					url: "https://www.figma.com/proto/pfws8T9a234LJUxJZs1SwQ/Etasuisse?node-id=176-2134&p=f&viewport=617%2C301%2C0.05&t=knPUC1xMmZYXQGFs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=176%3A2134&page-id=0%3A1",
+				},
+			],
+		},
+		{
+			projectName: "Fullness – Personal Finance & Budgeting App",
+			description:
+				"A mobile app that helps people take control of their money and build lasting financial habits. Fullness brings expense tracking, savings, budgeting, financial goals, and net worth into one place, guided by simple daily actions, streaks that keep users motivated, and practical money-saving tips.",
+			madeWith: [
+				"Product Design",
+				"UX/UI Design",
+				"Mobile Experience",
+				"Financial Technology",
+			],
+			link: "https://www.figma.com/proto/jSi0ulQaDiDI7mSRO1HxuG/Fullness-Application?node-id=15-884&starting-point-node-id=2%3A5&t=UWCshTjFtFniwFCX-1",
+		},
+		{
 			projectName: "PaysLo – Seamless Digital Wallet for Everyone",
 			description:
 				"A modern digital wallet app built for fast, secure, and accessible money management. PaysLo allows users to send, receive, deposit, withdraw, and exchange funds through mobile money, bank, PayPal, and Stripe. Designed with simplicity and trust at its core, the app empowers users across currencies and borders.",

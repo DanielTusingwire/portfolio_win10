@@ -29,13 +29,27 @@ function Projects() {
 								);
 							})}
 						</p>
-						<PrimaryButton
-							iconProps={{ iconName: "NavigateExternalInline" }}
-							text="View in Figma"
-							href={project.link}
-							target="_blank"
-							rel="noopener noreferrer"
-						/>
+						{project.availabilityNote ? (
+							<span className="project-availability">
+								{project.availabilityNote}
+							</span>
+						) : (
+							(
+								project.links || [
+									{ label: "View in Figma", url: project.link },
+								]
+							).map((link) => (
+								<PrimaryButton
+									key={link.url}
+									className="uk-margin-small-right uk-margin-small-bottom"
+									iconProps={{ iconName: "NavigateExternalInline" }}
+									text={link.label}
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							))
+						)}
 					</div>
 				);
 			})}

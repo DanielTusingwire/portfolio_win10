@@ -5,13 +5,16 @@ The portfolio of Daniel Tusingwire, a Product Design Engineer from Uganda. It wo
 ## What's inside
 
 - **About Me:** my summary, experience, education, projects, skills, resume and contact details
-- **Projects:** six product design projects, each with a link to its Figma prototype
+- **Projects:** nine product design projects, most with links to their Figma prototypes
 - **Contact Me:** email, phone and WhatsApp links
 - **Chrome:** a small browser window inside the desktop
 - **Settings:** wallpaper and system options
 
 ## Projects
 
+- Farmsell App: agricultural logistics platform
+- Etasuisse PM: project management and cost tracking platform
+- Fullness: personal finance and budgeting app
 - PaysLo: digital wallet
 - Budytalk: voice-first social platform
 - Utluff: global service connector app
@@ -48,9 +51,9 @@ This creates a static site in the `build` folder.
 
 ## Deploy
 
-The site is set up for Cloudflare Workers. `wrangler.jsonc` serves the `build` folder and sends addresses such as `/macOS` to `index.html`.
+Live at https://daniel-tusingwire.pages.dev/
 
-In Cloudflare, connect this repository with the build command `npm run build` and the deploy command `npx wrangler deploy`. Each push to `main` then updates the live site.
+The site is hosted on Cloudflare Pages, connected to this repository. Its build command is `npm run build` and its build output directory is `build`. Each push to `main` updates the live site.
 
 ## Update the content
 
