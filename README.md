@@ -1,6 +1,6 @@
 # Daniel Tusingwire | Portfolio
 
-The portfolio of Daniel Tusingwire, a Product Design Engineer from Uganda. It works like a desktop computer: visitors choose a Windows 10 or macOS desktop, then open apps to explore my work.
+The portfolio of Daniel Tusingwire, a Product Design Engineer from Uganda. It works like a Windows 10 desktop: visitors press Enter, then open apps to explore my work. A macOS version is also available at `/macOS`.
 
 ## What's inside
 
@@ -35,8 +35,7 @@ The site opens at http://localhost:3000. To use another port, add a `.env` file 
 
 | Page | Address |
 | --- | --- |
-| Choose a desktop | `/` |
-| Windows 10 | `/windows` |
+| Windows 10 | `/` |
 | macOS | `/macOS` |
 
 ## Build it
@@ -45,7 +44,7 @@ The site opens at http://localhost:3000. To use another port, add a `.env` file 
 npm run build
 ```
 
-This creates a static site in the `build` folder. Your host must send every address to `index.html`, so that pages such as `/windows` load when opened directly.
+This creates a static site in the `build` folder. Your host must send every address to `index.html`, so that pages such as `/macOS` load when opened directly.
 
 ## Update the content
 

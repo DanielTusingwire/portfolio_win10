@@ -40,7 +40,7 @@ function MacOSDesktop() {
             case "shutdown":
                 setSystemState({ ...systemState, isShuttingDown: true });
                 setTimeout(() => {
-                    window.location.href = "/";
+                    window.location.href = "/macOS";
                 }, 3000);
                 break;
             case "restart":
