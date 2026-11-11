@@ -28,6 +28,7 @@ const appStateReducer = (state = [initialAppState], action) => {
 					newApp.showInDesktop = appsList[i].showInDesktop;
 					newApp.showLinks = appsList[i].showLinks;
 					newApp.isApplication = appsList[i].isApplication;
+					newApp.openMaximized = appsList[i].openMaximized || false;
 					if (newApp.showLinks) {
 						newApp.subComponent = appsList[i].subComponent;
 					}
@@ -44,7 +45,7 @@ const appStateReducer = (state = [initialAppState], action) => {
 				currentAppState.isMinimized = !currentAppState.isMinimized;
 			} else {
 				currentAppState.isMinimized = false;
-				currentAppState.isMaximized = false;
+				currentAppState.isMaximized = !!currentAppState.openMaximized;
 				currentAppState.isOpened = true;
 			}
 			apps = replaceObjectListByKey(state.apps, currentAppState, "id");

@@ -2,8 +2,20 @@ import React from "react";
 import "./about.scss";
 import user from "../../../utils/data/user.config";
 import { PrimaryButton } from "@fluentui/react";
+import { useDispatch, useSelector } from "react-redux";
+import { handleApplicationClick } from "../../../utils/actions/app.action";
 
 function Projects() {
+	const apps = useSelector((state) => state.appState.apps) || [];
+	const dispatch = useDispatch();
+	const openApp = (id) => {
+		const app = apps.find((a) => a.id === id);
+		// Opening an app that is already on screen would minimise it.
+		if (app && !(app.isOpened && !app.isMinimized)) {
+			dispatch(handleApplicationClick(app));
+		}
+	};
+
 	return (
 		<div>
 			{user.projects.map((project, index) => {
@@ -29,6 +41,14 @@ function Projects() {
 								);
 							})}
 						</p>
+						{project.caseStudyApp && (
+							<PrimaryButton
+								className="uk-margin-small-right uk-margin-small-bottom"
+								iconProps={{ iconName: "ReadingMode" }}
+								text="Read Case Study"
+								onClick={() => openApp(project.caseStudyApp)}
+							/>
+						)}
 						{project.availabilityNote ? (
 							<span className="project-availability">
 								{project.availabilityNote}

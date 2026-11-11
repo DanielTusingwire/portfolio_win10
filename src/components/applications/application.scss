@@ -19,3 +19,34 @@
 .discard-button :hover {
 	background-color: #323130 !important;
 }
+
+.case-study-viewer {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+}
+
+.case-study-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	padding: 6px 4px 8px;
+	font-size: 13px;
+	color: #ffffff;
+}
+
+.case-study-bar a {
+	color: #ffffff;
+	white-space: nowrap;
+}
+
+.case-study-frame {
+	flex: 1;
+	width: 100%;
+	min-height: 0;
+	border: 0;
+	border-radius: 4px;
+	background: #ffffff;
+}

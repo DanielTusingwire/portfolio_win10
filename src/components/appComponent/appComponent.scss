@@ -143,3 +143,9 @@
 .hide-element {
 	display: none !important;
 }
+
+// A window with one section has nothing to switch, so always show it.
+// UIkit can fail to mark it active on small screens, which left it blank.
+.uk-switcher > li:only-child {
+	display: block !important;
+}

@@ -5,6 +5,7 @@ The portfolio of Daniel Tusingwire, a Product Design Engineer from Uganda. It wo
 ## What's inside
 
 - **About Me:** my summary, experience, education, projects, skills, resume and contact details
+- **Farmsell Case Study:** a full UX case study, also at `/case-studies/farmsell/`
 - **Projects:** nine product design projects, most with links to their Figma prototypes
 - **Contact Me:** email, phone and WhatsApp links
 - **Chrome:** a small browser window inside the desktop
@@ -60,6 +61,7 @@ The site is hosted on Cloudflare Pages, connected to this repository. Its build 
 | To change | Edit |
 | --- | --- |
 | Details, experience, education, projects and skills | `src/utils/data/user.config.js` |
+| Case studies | `public/case-studies/` |
 | Resume | `src/utils/data/Daniel_Tusingwire_CV.pdf` |
 | Desktop apps | `src/utils/data/apps.config.js` |
 | Page title and description | `public/index.html` |

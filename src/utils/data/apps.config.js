@@ -10,6 +10,8 @@ import aboutMe from "../../assets/images/apps/aboutMe.png";
 import chrome from "../../assets/images/apps/chrome.svg";
 import mail from "../../assets/images/apps/mail.png";
 import projectsIcon from "../../assets/images/baseImages/default_folder.png";
+import farmsellLogo from "../../assets/images/data/farmsell.png";
+import caseStudyViewer from "../../components/applications/caseStudy.application";
 import settings from "../../assets/images/apps/settings.svg";
 import BackgroundSettings from "../../components/applications/settings/background.settings";
 import MacOSSettings from "../../components/macOS/settings/macOSSettings";
@@ -51,6 +53,25 @@ const appConfig = [
 			{
 				name: "Contact Me",
 				component: ContactMe,
+			},
+		],
+	},
+	{
+		id: "farmsellCaseStudy",
+		name: "Farmsell Case Study",
+		order: 2,
+		icon: farmsellLogo,
+		isApplication: true,
+		showInDesktop: true,
+		showLinks: true,
+		openMaximized: true,
+		subComponent: [
+			{
+				name: "Farmsell Case Study",
+				component: caseStudyViewer(
+					"/case-studies/farmsell/index.html",
+					"Farmsell UX Case Study"
+				),
 			},
 		],
 	},

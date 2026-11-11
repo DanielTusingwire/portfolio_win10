@@ -14,6 +14,7 @@ class AppStateDocument {
 		this.showLinks = false;
 		this.subComponent = {};
 		this.isApplication = false;
+		this.openMaximized = false;
 	}
 }
 

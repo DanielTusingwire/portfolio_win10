@@ -186,6 +186,7 @@ const user = {
 				"Agricultural Technology",
 			],
 			availabilityNote: "Available after public release",
+			caseStudyApp: "farmsellCaseStudy",
 		},
 		{
 			projectName:
