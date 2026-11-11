@@ -190,18 +190,18 @@ const user = {
 		},
 		{
 			projectName:
-				"Etasuisse PM – Project Management & Cost Tracking Platform",
+				"Etasuisse PM – Internal Project Management & Cost Tracking Platform",
 			description:
-				"A connected project management platform featuring an admin web dashboard and an operator mobile app. Etasuisse PM streamlines project management, work-hour tracking, material and vehicle cost recording, expense management, and financial reporting. Designed to replace manual Excel-based processes, the platform helps businesses coordinate field operations, monitor project costs, and track profitability in one place.",
-			madeWith: ["Product Design", "Web Dashboard", "Mobile App"],
+				"An internal platform built for Etasuisse AG, a Swiss engineering company specialising in piping systems, geothermal energy and technical water treatment. It connects an admin web dashboard with a mobile app for field operators, replacing manual Excel-based processes with one system for managing projects, logging work hours, recording material and vehicle costs, handling expenses and producing financial reports. Office teams can now coordinate field operations, monitor project costs and track profitability in real time.",
+			madeWith: ["Product Design", "Internal Tools", "Web Dashboard", "Mobile App"],
 			links: [
 				{
 					label: "View Mobile App",
-					url: "https://www.figma.com/proto/pfws8T9a234LJUxJZs1SwQ/Etasuisse?node-id=296-10048&p=f&viewport=604%2C334%2C0.09&t=zqF4UxpPNfPVZTM6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=203%3A5496&page-id=1%3A2",
+					url: "https://www.figma.com/proto/hZqxhmjRNfMzXw1wapgXrJ/Etasuisse.com?node-id=296-10048&p=f&t=sSlYWFfVHVXURiCw-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=203%3A5496",
 				},
 				{
 					label: "View Dashboard",
-					url: "https://www.figma.com/proto/pfws8T9a234LJUxJZs1SwQ/Etasuisse?node-id=176-2134&p=f&viewport=617%2C301%2C0.05&t=knPUC1xMmZYXQGFs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=176%3A2134&page-id=0%3A1",
+					url: "https://www.figma.com/proto/hZqxhmjRNfMzXw1wapgXrJ/Etasuisse.com?node-id=176-2134&p=f&t=9R2sRrs7Lfn3fJkk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=176%3A2134",
 				},
 			],
 		},
