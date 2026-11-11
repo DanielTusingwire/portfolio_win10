@@ -6,6 +6,7 @@ The portfolio of Daniel Tusingwire, a Product Design Engineer from Uganda. It wo
 
 - **About Me:** my summary, experience, education, projects, skills, resume and contact details
 - **Farmsell Case Study:** a full UX case study, also at `/case-studies/farmsell/`
+- **Etasuisse Case Study:** a full UX case study, also at `/case-studies/etasuisse/`
 - **Projects:** nine product design projects, most with links to their Figma prototypes
 - **Contact Me:** email, phone and WhatsApp links
 - **Chrome:** a small browser window inside the desktop

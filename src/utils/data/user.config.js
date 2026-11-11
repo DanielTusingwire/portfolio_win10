@@ -191,6 +191,7 @@ const user = {
 		{
 			projectName:
 				"Etasuisse PM – Internal Project Management & Cost Tracking Platform",
+			caseStudyApp: "etasuisseCaseStudy",
 			description:
 				"An internal platform built for Etasuisse AG, a Swiss engineering company specialising in piping systems, geothermal energy and technical water treatment. It connects an admin web dashboard with a mobile app for field operators, replacing manual Excel-based processes with one system for managing projects, logging work hours, recording material and vehicle costs, handling expenses and producing financial reports. Office teams can now coordinate field operations, monitor project costs and track profitability in real time.",
 			madeWith: ["Product Design", "Internal Tools", "Web Dashboard", "Mobile App"],

@@ -11,6 +11,7 @@ import chrome from "../../assets/images/apps/chrome.svg";
 import mail from "../../assets/images/apps/mail.png";
 import projectsIcon from "../../assets/images/baseImages/default_folder.png";
 import farmsellLogo from "../../assets/images/data/farmsell.png";
+import etasuisseLogo from "../../assets/images/data/etasuisse.png";
 import caseStudyViewer from "../../components/applications/caseStudy.application";
 import settings from "../../assets/images/apps/settings.svg";
 import BackgroundSettings from "../../components/applications/settings/background.settings";
@@ -71,6 +72,25 @@ const appConfig = [
 				component: caseStudyViewer(
 					"/case-studies/farmsell/index.html",
 					"Farmsell UX Case Study"
+				),
+			},
+		],
+	},
+	{
+		id: "etasuisseCaseStudy",
+		name: "Etasuisse Case Study",
+		order: 3,
+		icon: etasuisseLogo,
+		isApplication: true,
+		showInDesktop: true,
+		showLinks: true,
+		openMaximized: true,
+		subComponent: [
+			{
+				name: "Etasuisse Case Study",
+				component: caseStudyViewer(
+					"/case-studies/etasuisse/index.html",
+					"Etasuisse PM Case Study"
 				),
 			},
 		],

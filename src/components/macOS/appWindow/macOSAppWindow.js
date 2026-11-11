@@ -161,7 +161,7 @@ function MacOSAppWindow({ appInfo }) {
                     )}
 
                     {/* Content */}
-                    <div className={`macos-window-content ${["aboutMe", "farmsellCaseStudy"].includes(appInfo.id) ? "macos-window-content-dark" : ""}`}>
+                    <div className={`macos-window-content ${["aboutMe", "farmsellCaseStudy", "etasuisseCaseStudy"].includes(appInfo.id) ? "macos-window-content-dark" : ""}`}>
                         {appInfo.subComponent &&
                             appInfo.subComponent[activeTab] &&
                             React.createElement(
